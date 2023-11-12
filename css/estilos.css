@@ -104,21 +104,73 @@ div.ajustar{
     height: 100%;
     padding: 15px; 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* Dashboard */
 .content .dash-itens{
-    border: solid 1px #CCC;
-    padding: 15px;
-    background-color: #202020;
-    width: 33%;
-    height: 250px;
+    width: 25%;
+    height: 210px;
     margin: 10px;
+    display: block;
+    box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.65);
+}
+
+.content .dash-itens h3{
+    width: 100%;
+    padding: 10px;
+}
+
+.income h3, 
+.income a{
+    background-color: green;
+    color: #FFF;
+}
+
+.expenses h3, 
+.expenses a{
+    background-color: red;
+    color: #FFF;
+}
+
+.reservation h3, 
+.reservation a{
+    background-color: #154772;
+    color: #FFF;
+}
+
+.balance h3, 
+.balance a{
+    background-color: #4a4a4a;
+    color: #FFF;
+}
+
+.content .dash-itens .info{
+    width: 100%;
+    padding: 28px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.content .dash-itens .details {
+    width: 100%;
+    padding: 15px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+    display: flex;
+
+}
+
+.content .dash-itens a {
+    padding: 10px 25px;
+    color: #FFF;
 }
 
 .content .dash-itens .btn-modal{
-    color: #FFF;
     text-decoration:  none;
 }
 
@@ -141,6 +193,7 @@ div.ajustar{
     width: 50%;
     opacity: none;
     border-radius: 10px;
+    color: #FFF;
 }
 
 .modal-content .bclose{
@@ -151,7 +204,10 @@ div.ajustar{
     padding: 20px;
     cursor: pointer;
 }
-
+ 
+.modal-content .title-modal{
+    font-size: 36px;
+}
 
 .modal-content .texto{
     color: #fff;

@@ -28,20 +28,22 @@ expandir.addEventListener('click', () => {
 
 
 /** Modal */
-let btnModal = document.querySelector('.btn-modal')
+let btnModal = document.querySelectorAll('.btn-modal')
 let modal = document.querySelector('.modal')
 modal.classList.add('transition')
 
 let btnCloseModal = document.querySelector('.bclose')
 
 /** Exibe modal */
-btnModal.addEventListener('click', () => {
-    modal.style.display = 'flex'
-    setTimeout(() => {
-        modal.style.opacity = '1'
-    }, 10)
+btnModal.forEach((link) =>
+    link.addEventListener('click', () => {
+        modal.style.display = 'flex'
+        setTimeout(() => {
+            modal.style.opacity = '1'
+        }, 10)
 
-})
+    })
+)
 
 /** Fecha modal */
 btnCloseModal.addEventListener('click', () => {
