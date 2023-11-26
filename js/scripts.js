@@ -52,3 +52,10 @@ btnCloseModal.addEventListener('click', () => {
         modal.style.display = 'none'
     }, 1000)
 })
+
+modal.addEventListener('click', () => {
+    modal.style.opacity = '0'
+    setTimeout(() => {
+        modal.style.display = 'none'
+    }, 1000)
+})
